@@ -1,0 +1,46 @@
+@media (max-width: 600px) {
+    html {
+        background-image: url('/background.jpg') !important;
+        background-size: 100% 100% !important;
+    }
+    .big-container > .container {
+        max-width: 75%;
+        padding: 0.6em;
+        width: calc(100vw * 0.75);
+    }
+    .title-container > .title {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .big-container > .container .car-image {
+        border-radius: 5px;
+        height: 15em;
+    }
+    .big-container > .container > .text {
+        padding: 0.1em;
+        margin-top: 0;
+    }
+    .big-container > .container > .text p{
+        margin-top: 1em;
+        font-size: 13px;
+        line-height: 1.4;
+    }
+    body > .footer-basic {
+        padding: 0.2em 0;
+    }
+    body > .footer-basic > footer > .social {
+        padding-bottom: 0;
+    }
+    body > .footer-basic > footer > .copyright {
+        margin: 0.2em 0 0.5em 0;
+    }
+    .footer-basic > footer {
+        margin-top: 0.5em;
+    }
+}
+@media (max-width: 380px) {
+    .big-container > .container > .car-image {
+        border-radius: 5px;
+        height: 12em;
+    }
+}
