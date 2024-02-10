@@ -25,9 +25,7 @@
         font-size: 13px;
         line-height: 1.4;
     }
-    body > .footer-basic {
-        padding: 0.2em 0;
-    }
+
     body > .footer-basic > footer > .social {
         padding-bottom: 0;
     }
