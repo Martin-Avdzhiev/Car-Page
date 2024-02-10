@@ -30,16 +30,22 @@
         padding-bottom: 0;
     }
     body > .footer-basic > footer > .copyright {
-        margin: 0.2em 0 0.5em 0;
+        margin: 0.2em 0 0 0;
     }
     .footer-basic > footer {
         margin-top: 0.5em;
     }
 }
-@media (max-width: 380px) {
+@media (max-width: 500px) {
     .big-container > .container > .container-image > .car-image {
         border-radius: 5px;
         height: 12em;
+    }
+    body > .footer-basic > footer > .wrapper-social > .social {
+        gap: 0.5em;
+    }
+    body > .footer-basic {
+        height: 6em;
     }
 }
 @media (min-width: 601px) and (max-height: 700px) {

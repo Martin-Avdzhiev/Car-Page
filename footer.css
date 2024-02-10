@@ -6,7 +6,6 @@
     padding: 1em 0;
     color: #4b4c4d;
     background-color: #4a4a4a;
-    height: 3.3em;
 }
 
 .footer-basic .social {
@@ -18,8 +17,9 @@
     padding-bottom: 0.5em;
 }
 
-.footer-basic .social>a {
-    font-size: 24px;
+.footer-basic .social>a,
+.footer-basic .social div>a {
+    font-size: 18px;
     width: 1.68em;
     height: 1.68em;
     line-height: 1.68em;
@@ -36,10 +36,13 @@
     opacity: 0.9;
 }
 
+.wrapper-social {
+    text-align: center;
+}
+
 .footer-basic .copyright {
     font-size: 18px;
-    margin-top: 0em;
     text-align: center;
     color: #aaa;
-    margin-bottom: 0;
+    margin: 0 0 0.1em 0;
 }

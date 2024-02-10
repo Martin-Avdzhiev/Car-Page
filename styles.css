@@ -78,7 +78,20 @@ body {
 i {
     color: white;
 }
-span {
+
+.phone-wrapper{
+    flex: 1;
+}
+
+.phone-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 0.5em;
+}
+
+.phone {
     color: white;
-    display: block;
 }
