@@ -1,52 +1,85 @@
-@media (max-width: 600px) {
-    html {
-        background-image: url('/background.jpg') !important;
-        background-size: 100% 100% !important;
+@media (max-width: 750px) {
+
+    body {
+        height: 100vh !important;
+        max-height: 100vh !important;
+    } 
+    .big-container {
+        max-height: 85%;
+        margin: 2em 0 1em 0;
     }
     .big-container > .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         max-width: 75%;
         padding: 0.6em;
-        width: calc(100vw * 0.75);
+        width: calc(100vw * 0.65);
+        gap: 1em;
+    }
+    .title-container{
+        width: 85%;
     }
     .title-container > .title {
         font-size: 18px;
         font-weight: 600;
     }
-    .big-container > .container .container-image > .car-image {
+    .big-container > .container .container-images {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 65%;
+        width: 50%;
+        gap: 0.5em;
+    }
+    .big-container > .container .container-images > .car-image {
         border-radius: 5px;
-        height: 15em;
+        height: 32%;
+        width: 100%;
+    }
+    .text > div {
+        width: 100% !important;
     }
     .big-container > .container > .text {
+        display: flex;
+        flex-direction: column-reverse;
         padding: 0.1em;
         margin-top: 0;
+        width: 85%;
+        gap: 5%;
     }
     .big-container > .container > .text p{
-        margin-top: 1em;
-        font-size: 15px;
-        line-height: 1.4;
+        font-size: 16px;
+        line-height: 1.5;
     }
-
     body > .footer-basic > footer > .social {
         padding-bottom: 0;
+        height: 2em !important;
     }
-    body > .footer-basic > footer > .copyright {
-        margin: 0.2em 0 0 0;
+    body > .footer-basic{
+        padding: 0.2em 0;
+        height: 7em;
     }
-    .footer-basic > footer {
-        margin-top: 0.5em;
+}
+@media (max-width: 300px) {
+    .text {
+        display: block !important;
+    }
+    .text div p:nth-child(2) {
+        border-bottom: 0.2em ridge white;
+    }
+    .first-text p:first-child, .second-text p:first-child, .third-text p:first-child{
+        margin: 0 !important;
     }
 }
 @media (max-width: 500px) {
-    .big-container > .container > .container-image > .car-image {
+    .big-container > .container > .container-images > .car-image {
         border-radius: 5px;
-        height: 12em;
     }
     body > .footer-basic > footer > .wrapper-social > .social {
         gap: 0.5em;
     }
-    body > .footer-basic {
-        height: 6em;
-    }
+
 }
 @media (min-width: 601px) and (max-height: 700px) {
     .big-container > .container {
@@ -78,8 +111,66 @@
 }
 @media (min-height: 801px) and (min-width: 876px) and (max-width: 1500px) {
     .big-container > .container {
-        max-width: 55%;
+        max-width: 65%;
         padding: 0.6em;
-        width: calc(100vw * 0.55);
+        width: calc(100vw * 0.65);
+    }
+}
+
+@media (min-height: 501px) and (min-width: 600px) and (max-width: 1000px) {
+    .big-container > .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 75%;
+        padding: 0.6em;
+        width: calc(100vw * 0.65);
+        gap: 1em;
+    }
+    .title-container{
+        width: 85%;
+    }
+    .title-container > .title {
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .big-container > .container .container-images {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 65%;
+        width: 50%;
+        gap: 0.5em;
+    }
+    .big-container > .container .container-images > .car-image {
+        border-radius: 5px;
+        height: 32%;
+        width: 100%;
+    }
+    .big-container > .container > .text {
+        display: flex;
+        flex-direction: row;
+        padding: 0.1em;
+        margin-top: 0;
+        width: 85%;
+        gap: 5%;
+        height: 7em;
+    }
+    .big-container > .container > .text p{
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    body > .footer-basic{
+        padding: 0.2em 0;
+        height: 4em;
+        font-size: 22px;
+    }
+}
+
+
+@media (min-height: 1000px) and (min-width: 750px) and (max-width: 1000px) {
+    .big-container > .container > .text p{
+        font-size: 22px;
+        line-height: 1.5;
     }
 }
