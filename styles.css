@@ -1,106 +1,145 @@
 @import url("./responsive.css");
 @import url("./footer.css");
 html {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #363636;
-    background-size: 50% 100%;
-    height: 100%;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #363636;
+  background-size: 50% 100%;
+  height: 100%;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
 }
 
 .title-container {
-    text-align: center;
-    margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
 }
 
 .title {
-    color: rgb(255, 255, 255);
-    margin: 0 0 0.5em 0;
-    font-weight: 900;
+    text-align:center;
+  color: rgb(255, 255, 255);
+  margin: 0;
+  font-weight: 900;
 }
 .big-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
 }
 .container {
-    width: calc(100vw * 0.8);
-    max-width: 60em;
-    margin: 1em auto 2em auto;
-    background-color: #4a4a4a;
-    border-radius: 0.625em;
-    padding: 1.25em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    min-height: 100%;
+  width: calc(100vw * 0.8);
+  max-width: 60em;
+  margin: 1em auto 2em auto;
+  background-color: #4a4a4a;
+  border-radius: 0.625em;
+  padding: 1.25em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-height: 100%;
 }
 
 .container-images {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    overflow: hidden;
-    height: 30vh;
-    border-radius: 1em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  height: 30vh;
+  border-radius: 1em;
 }
 .car-image {
-    width: calc(100% / 3 - 2em);
-    height: 100%;
-    border-radius: 1em;
+  width: calc(100% / 3 - 2em);
+  height: 100%;
+  border-radius: 1em;
 }
 p {
-    margin: 0;
+  margin: 0;
 }
 .text {
-    display: flex;
-    font-size: 20px;
-    justify-content: space-around;
-    align-items: center;
-
+  display: flex;
+  font-size: 20px;
+  justify-content: space-around;
+  align-items: center;
 }
-.text div{
-    width: 30%;
+.text div {
+  width: 30%;
 }
 .text p {
-    width: 100%;
-    flex: 1;
-    font-size: 1em;
-    line-height: 1.6;
-    color: white;
-    text-align: center;
+  width: 100%;
+  flex: 1;
+  font-size: 1em;
+  line-height: 1.6;
+  color: white;
+  text-align: center;
 }
-.first-text p:first-child, .second-text p:first-child, .third-text p:first-child{
-    margin: 0.5em 0 0 0;
+.first-text p:first-child,
+.second-text p:first-child,
+.third-text p:first-child {
+  margin: 0.5em 0 0 0;
 }
 
 i {
-    color: white;
+  color: white;
 }
 
-.phone-wrapper{
-    flex: 1;
+.phone-wrapper {
+  flex: 1;
 }
 
-.phone-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    gap: 0.5em;
+.phone-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  gap: 0.5em;
 }
 
 .phone {
-    color: white;
+  color: white;
+}
+
+.bitcoin {
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+  width: 25em;
+  overflow: hidden;
+  color: white;
+  max-width: 100%;
+}
+.bitcoin-logo-container {
+  width: 3em;
+  height: 3em;
+  overflow: hidden;
+  margin-right: -0.5em;
+}
+.bitcoin-logo {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.bitcoin>p{
+    text-align:center;
+}
+
+.bitcoin-accepted-here{
+  max-width:50%;
+}
+
+.bitcoin-accepted-here>img{
+  width:100%;
+  height:100%;
 }

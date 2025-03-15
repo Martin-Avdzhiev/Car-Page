@@ -1,11 +1,9 @@
 @media (max-width: 750px) {
 
     body {
-        height: 100vh !important;
-        max-height: 100vh !important;
+
     } 
     .big-container {
-        max-height: 85%;
         margin: 2em 0 1em 0;
     }
     .big-container > .container {
@@ -79,8 +77,19 @@
     body > .footer-basic > footer > .wrapper-social > .social {
         gap: 0.5em;
     }
+    .bitcoin{
+       font-size: 14px !important;
+    }
 
 }
+
+@media(max-width: 700px) {
+    .bitcoin{
+        height: 5em !important;
+        flex-direction:column;
+     }
+}
+
 @media (min-width: 601px) and (max-height: 700px) {
     .big-container > .container {
         max-width: 65%;
